@@ -1,2 +1,1 @@
-# Phrase-Finder
-Small program created to make finding words in huge number of files
+<h2>Phrase finder is a simple program created to make searching of text files contains certain words.</h2>
