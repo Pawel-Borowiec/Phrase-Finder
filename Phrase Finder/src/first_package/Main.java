@@ -1,21 +1,19 @@
 package first_package;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.DirectoryChooser;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
-import java.util.ArrayList;
 
 public class Main extends Application{
     static int HEIGTH = 600;
@@ -25,7 +23,7 @@ public class Main extends Application{
     static VBox root;
     static TextArea searchedPhrase;
     static Button chooseNewFileButton;
-    static ScrollPane resultArea;
+    static BorderPane resultArea;
     static TextArea resultTextArea;
 
     public static void main(String[] args){
@@ -47,23 +45,24 @@ public class Main extends Application{
     }
     private Label getTitle() {
         Label label = new Label("Phrase Finder");
-        label.setPrefSize(WIDTH,40);
+        label.setPrefSize(WIDTH+10,40);
         label.setAlignment(Pos.CENTER);
         label.setStyle("-fx-background-color:  #c39bd3");
         return  label;
     }
     private HBox getNavigationBar() {
         HBox hBox = new HBox();
-        hBox.setPrefSize(WIDTH,120);
-        hBox.setStyle("-fx-background-color:  #82e0aa ");
+        hBox.setPrefSize(WIDTH+10,120);
+        hBox.setStyle("-fx-background-color:  lightblue ");
         chooseNewFileButton = getNewSourceFileButton();
         searchedPhrase = getSearchedPhrase();
-        hBox.getChildren().addAll(chooseNewFileButton,searchedPhrase);
+        hBox.setPadding(new Insets(20));
+        hBox.getChildren().addAll(chooseNewFileButton,getSearchedPhraseBox());
         return hBox;
     }
     private Button getNewSourceFileButton(){
         Button button = new Button("Wybierz nowy plik\n do przeszukania");
-        button.setPrefSize(WIDTH*0.5,120);
+        button.setPrefSize((WIDTH+10)/2-20,100);
         button.setStyle("-fx-background-color:  #884ea0 ");
         button.setOnAction(e->{
             try {
@@ -81,15 +80,30 @@ public class Main extends Application{
     }
     private TextArea getSearchedPhrase() {
         TextArea textArea = new TextArea();
-        textArea.setPrefSize(WIDTH*0.5,440);
+        textArea.setPrefSize((WIDTH+10)/2-20,80);
         return textArea;
     }
-    private ScrollPane getResultArea() {
+    private VBox getSearchedPhraseBox(){
+        VBox vBox = new VBox();
+        vBox.setPrefSize((WIDTH+10)/2-20,100);
+        vBox.getChildren().addAll(getPhraseLabel(),searchedPhrase);
+        return vBox;
+    }
+    private Label getPhraseLabel(){
+        Label label = new Label("Tu wpisz szukaną frazę");
+        label.setStyle("-fx-background-color: #884ea0");
+        label.setAlignment(Pos.CENTER);
+        label.setPrefSize((WIDTH+10)/2-20,20);
+        return label;
+    }
+    private BorderPane getResultArea() {
         resultTextArea = new TextArea();
-        resultTextArea.setText("XDDDDDDDDDDDDDDDDddd");
-        resultTextArea.setPrefSize(WIDTH,440);
-        ScrollPane scrollPane = new ScrollPane(resultTextArea);
-        scrollPane.setPrefSize(WIDTH, 440);
-        return scrollPane;
+        resultTextArea.setPrefSize(WIDTH-40,420);
+        resultTextArea.setStyle("-fx-background-color: lightblue");
+        BorderPane borderPane = new BorderPane(resultTextArea);
+        borderPane.setPadding(new Insets(20));
+        borderPane.setStyle("-fx-background-color: lightblue");
+        borderPane.setPrefSize(WIDTH, 460);
+        return borderPane;
     }
 }
