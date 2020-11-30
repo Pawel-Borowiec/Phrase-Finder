@@ -13,4 +13,4 @@ Phrase Finder is written in Java 8 with usage of libraries of JavaFX to create s
 To run Phrase Finder you have to download .jar file from main folder and run it on you computer.
 
 ## How it look like
-![Algorithm schema](./Phrase Finder/images/graphic.png)
+![Algorithm schema](Phrase Finder/images/graphic.png)
