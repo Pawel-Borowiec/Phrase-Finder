@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Phrase-Finder:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Phrase_Finder_jar</output-path>
+    <root id="archive" name="Phrase-Finder.jar">
+      <element id="module-output" name="Phrase-Finder" />
+    </root>
+  </artifact>
+</component>
