@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/src/first_package/Futil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-line="5" selection-end-column="20" />
+              <caret column="22" selection-start-column="22" selection-end-line="5" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,6 +117,19 @@
             <path>
               <item name="Phrase Finder" type="b2602c69:ProjectViewProjectNode" />
               <item name="Phrase Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Phrase Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Phrase Finder" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Phrase-Finder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Phrase Finder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Phrase Finder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -181,12 +194,12 @@
       <updated>1606655701780</updated>
       <workItem from="1606655708481" duration="3510000" />
       <workItem from="1606662244614" duration="4469000" />
-      <workItem from="1606735087163" duration="3746000" />
+      <workItem from="1606735087163" duration="3754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11725000" />
+    <option name="totallyTimeSpent" value="11733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1554" height="832" extended-state="0" />
@@ -200,7 +213,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16142857" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16142857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -236,7 +249,7 @@
     <entry file="file://$PROJECT_DIR$/src/first_package/Futil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-line="5" selection-end-column="20" />
+          <caret column="22" selection-start-column="22" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
