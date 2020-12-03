@@ -1,5 +1,6 @@
 ## Table of Contents
 * [About program](#about-program)
+* [How it look like?](#how-it-look-like?)
 * [Technologies](#technologies)
 * [How to run](#setup)
 
